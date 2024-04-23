@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int lastDigit = n%10;
+    int firstDigit;
+    while(n!=0){
+        firstDigit = n%10;
+        n = n/10;
+    }
+
+    printf("%d %d",firstDigit,lastDigit);
+}
