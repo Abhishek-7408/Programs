@@ -9,18 +9,22 @@ public class NeonNum {
             int r = sqr%10;
             sum = sum+r;
             sqr/=10;
+           
         }
-if(sum==n){
-    return true;
-    return false;
-
+        return sum==n;
 
     }
     	public static void main(String[] args) {
 
             Scanner sc = new Scanner(System.in);
             int n = sc.nextInt();
-            isNeon(n);
+            
+            if(isNeon(n)){
+                System.out.println("Neon Number");
+            }
+            else{
+                System.out.println("Not Neon");
+            }
             
         }
 }
