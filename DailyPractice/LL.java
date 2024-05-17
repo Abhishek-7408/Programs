@@ -1,41 +1,40 @@
 import java.util.*;
 public class LL {
-    class Node{
-        String data;
-        Node next;
-
-
-        Node(String data){
-
-            this.data = data;
-            this.next = null;
-        }
-    }
-
-// add first,last
-
-public void addFirst(String data){
-
-Node newNode = new Node(data)
-    if(head==null){
-
-        head = newNode;
-        return;
-    }
-}
-
-
-
-
-
-
+   
 public static void main(String[] args) {
-    
-LL list  = new LL();
+    LinkedList<String> list = new LinkedList<>();
+    list.addFirst("a");
+    list.addFirst("is");
+    list.addFirst("this");
+
+    System.out.println(list);
+
+    list.addLast("LinkedList");
+    System.out.println(list);
+ //   list.add(0, null);
+    System.out.println(list);
+    list.add("by default add last");
+    System.out.println(list.size());
+    System.out.println(list);
+
+
+    for(int i=0;i<list.size();i++){
+        //if(list.get==value){
+           // serch
+      //  }
+        System.out.print(list.get(i)+ " " );
+
+    }
+    System.out.println("null");
+
+    list.removeFirst();
+    list.remove();
+    for(int i=0;i<list.size();i++){
+        System.out.print(list.get(i)+" ");
+    }
 
 
 
 }
-
 
 }
